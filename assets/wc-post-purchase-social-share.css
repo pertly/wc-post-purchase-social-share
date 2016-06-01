@@ -1,0 +1,111 @@
+.ui-widget-content{
+    border: 0;
+    background: #FFFFFF;
+}
+.ui-widget-header{
+    border:0;
+    background:#FFFFFF;
+    cursor: pointer;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+    background:#FFFFFF;
+    cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor{
+    cursor: pointer;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited{
+    color: #000000;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+    color: #eb2126;
+}
+
+.ui-widget-content a:hover{
+    color: #eb2126 !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    background: #F6F6F6;
+    border-radius: 0;
+}
+.ui-tabs-anchor{
+    outline: 0 !important;
+    outline-offset: 0 !important;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+    padding-bottom: 1px;
+}
+
+#wc-pp-ss-box-holder{
+    /*border: 1px solid #333333;
+    border-radius: 5px;*/
+    border: 1px dotted #ff9c2b;
+    padding: 5px;
+    margin: 0;
+    font-size: 12px;
+}
+.wc-pp-ss-s-holder{
+    border: 1px solid #ddd;
+    display: inline-block;
+    width: 98%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    margin-left: 2px;
+}
+.wc-pp-ss-s-img{
+    float: left;
+    max-width: 155px;
+    margin-right: 10px;
+}
+.wc-pp-ss-s-desc{
+    float: left;
+    max-width: 80%;
+}
+.ui-tabs .ui-tabs-panel{
+    padding: 0;
+}
+.sp-hdr-ss-tm{
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(235, 33, 38);
+}
+.wc-pp-ss-s-desc-ttl{
+    display: inline-block;
+    max-width: 85%;
+}
+.wc-pp-ss-s-desc-chng{
+    margin-left: 10px;
+    display: inline-block;
+    color: #ef0000;
+    cursor: pointer;
+}
+.wc-pp-ss-s-desc-chng-opts{
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.ss-temp-btn-shr{
+    padding: 7px 15px;
+    color: #FFFFFF !important;
+    border-radius: 5px;
+    background: #eb2126;
+    font-weight: bold;
+}
+.wc-pp-ss-s-desc-btn-fbk a{
+    background: #3b5998;
+}
+.wc-pp-ss-s-desc-btn-twt a{
+    background: #4099FF;
+}
+.ui-widget-content .ss-temp-btn-shr:hover{
+    color: #FFFFFF !important;
+}
+.wc-pp-ss-s-desc-btn{
+    margin-top: 10px;
+}
+.wcpp-ss-icn-fb, .wcpp-ss-icn-twt{
+    margin-top: -1px;
+}
