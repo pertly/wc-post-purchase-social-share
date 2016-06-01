@@ -40,7 +40,7 @@
 #wc-pp-ss-box-holder{
     /*border: 1px solid #333333;
     border-radius: 5px;*/
-    border: 1px dotted #ff9c2b;
+    /*border: 1px dotted #ff9c2b;*/
     padding: 5px;
     margin: 0;
     font-size: 12px;
@@ -61,7 +61,7 @@
 }
 .wc-pp-ss-s-desc{
     float: left;
-    max-width: 80%;
+    max-width: 70%;
 }
 .ui-tabs .ui-tabs-panel{
     padding: 0;
@@ -74,7 +74,7 @@
 }
 .wc-pp-ss-s-desc-ttl{
     display: inline-block;
-    max-width: 85%;
+    /*max-width: 85%;*/
 }
 .wc-pp-ss-s-desc-chng{
     margin-left: 10px;
@@ -93,6 +93,7 @@
     border-radius: 5px;
     background: #eb2126;
     font-weight: bold;
+    text-decoration: none !important;
 }
 .wc-pp-ss-s-desc-btn-fbk a{
     background: #3b5998;
@@ -108,4 +109,7 @@
 }
 .wcpp-ss-icn-fb, .wcpp-ss-icn-twt{
     margin-top: -1px;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+    border: 1px solid #ddd;
 }

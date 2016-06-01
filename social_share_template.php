@@ -12,7 +12,7 @@ if(!empty($orderItems)){
         $pid = !empty($oi['variation_id'])?$oi['variation_id']:$oi['product_id'];
         $productDetails = get_post($pid);
         $ptid = get_post_thumbnail_id( $pid );
-        $img = '';
+        $img = plugins_url('assets/photo-camera.jpg',(__FILE__));
         if(!empty($ptid)){
             $imgar = wp_get_attachment_image_src($ptid, 'thumbnail');
             $img = !empty($imgar['0'])?$imgar['0']:$img;
@@ -22,12 +22,17 @@ if(!empty($orderItems)){
         if(empty($desc)){
             $desc = get_post_meta($pid, 'sf_product_short_description', true);
         }
+        if(empty($desc)){
+            $desc = $productDetails->post_excerpt;
+        }
+        if(empty($desc)){
+            $desc = $productDetails->post_content;
+        }
         $desc = strip_tags($desc);
 
         $pd = array(
             'title'=>'I just bought: "'.$productDetails->post_title.'"',
             'ori_title'=>$productDetails->post_title,
-            /*'desc'=>substr($productDetails->post_content, 0, 500),*/
             'desc'=>urlencode(substr($desc, 0, 500)),
             'image'=>$img,
             'url'=>get_permalink($pid),
