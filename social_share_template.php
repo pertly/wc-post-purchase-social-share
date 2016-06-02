@@ -9,7 +9,8 @@ $options = array();
 $i = 0;
 if(!empty($orderItems)){
     foreach($orderItems as $oi){
-        $pid = !empty($oi['variation_id'])?$oi['variation_id']:$oi['product_id'];
+        //$pid = !empty($oi['variation_id'])?$oi['variation_id']:$oi['product_id'];
+        $pid = $oi['product_id'];
         $productDetails = get_post($pid);
         $ptid = get_post_thumbnail_id( $pid );
         $img = plugins_url('assets/photo-camera.jpg',(__FILE__));
